@@ -55,7 +55,7 @@ $$
 f' = \frac{-\alpha n (p^{*})^{n-1}}{(1 + (p^{*})^n)^2}
 $$
 
-To simplify the analysis, this $6 \times 6$ matrix can be transformed using the cube roots of unity ($\lambda_k$) into three independent $2 \times 2$ block matrices ($J_k$) for each mode $k \in \{0,1,2\}$.
+To simplify the analysis, this $6 \times 6$ Jacobian matrix can be transformed using the cube roots of unity ($\lambda_k$) into three independent $2 \times 2$ block matrices ($J_k$) for each mode $k \in \{0,1,2\}$.
 
 $$
 J_k = \begin{pmatrix}
