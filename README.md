@@ -45,7 +45,7 @@ The Jupyter Notebook (`IDC401_Project.ipynb`) included in this repository numeri
 ### 1. 2-Parameter Stability Boundary
 By mapping the boundaries where the eigenvalues cross the imaginary axis, we can visualize the parameter space ($\alpha$ vs $\beta$) where the system becomes unstable and begins to oscillate.
 
-![2-Parameter Stability Boundary](figures/2_parameter_stability.png)
+![2-Parameter Stability Boundary](figures/3_parameter_stability.png)
 *Figure 2: Stability boundaries for the repressilator across different Hill coefficients ($n$) and leakiness ratios. The system exhibits sustained oscillations within the unstable parameter regimes.*
 
 ### 2. Time Series Simulation
@@ -57,11 +57,11 @@ When parameters are chosen within the unstable regime, numerical integration rev
 ### 3. Bifurcation Diagram
 Treating the maximum transcription rate ($\alpha$) as our control parameter reveals the exact onset of the Hopf bifurcation. The diagram plots local extrema (maxima and minima) of the protein concentration, splitting into upper and lower branches when oscillations begin.
 
-![Bifurcation Diagram](figures/stability.png)
+![Bifurcation Diagram](figures/Stability.png)
 *Figure 4: Bifurcation diagram showing the transition from a stable fixed point to sustained oscillations as $\alpha$ increases.*
 
 ## Repository Structure
-* `IDC401_Project.ipynb`: The main Jupyter Notebook containing the ODE definitions, numerical integration, and visualizations.
+* `repressilator_stability.ipynb`: The main Jupyter Notebook containing the ODE definitions, numerical integration, and visualizations.
 * `A synthetic oscillatory network of transcriptional regulators.pdf`: The original 2000 *Nature* paper used as the primary biological reference.
 * `figures/`: Directory containing the plots and circuit diagrams used in this documentation.
 
