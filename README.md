@@ -30,8 +30,16 @@ Where:
 
 At steady state, the derivatives are zero. Assuming symmetry across the three genes, we get $m_i^* = m^*$ and $p_i^* = p^*$. The stability of this steady state is determined by the $6 \times 6$ Jacobian matrix:
 
-$$J = \begin{pmatrix} -1 & 0 & 0 & 0 & 0 & f_1' \\ 0 & -1 & 0 & f_2' & 0 & 0 \\ 0 & 0 & -1 & 0 & f_3' & 0 \\ \beta & 0 & 0 & -\beta & 0 & 0 \\ 0 & \beta & 0 & 0 & -\beta & 0 \\ 0 & 0 & \beta & 0 & 0 & -\beta \end{pmatrix}$$
-
+$$
+J = \begin{pmatrix}
+-1 & 0 & 0 & 0 & 0 & f_1' \\
+0 & -1 & 0 & f_2' & 0 & 0 \\
+0 & 0 & -1 & 0 & f_3' & 0 \\
+\beta & 0 & 0 & -\beta & 0 & 0 \\
+0 & \beta & 0 & 0 & -\beta & 0 \\
+0 & 0 & \beta & 0 & 0 & -\beta
+\end{pmatrix}
+$$
 Here, $f_i'$ represents the derivative of the repression function evaluated at the steady state ($p^*$):
 
 $$f_i' = \left. \frac{d}{dp_j} \left( \frac{\alpha}{1 + p_j^n} + \alpha_0 \right) \right|_{p_j = p^*} = \frac{-\alpha n p^{*(n-1)}}{(1 + p^{*n})^2}$$
