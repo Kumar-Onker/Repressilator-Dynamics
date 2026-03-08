@@ -90,18 +90,7 @@ Treating the maximum transcription rate ($\alpha$) as our control parameter reve
 
 ## How to Run
 
-1.  Clone this repository to your local machine:
-    ```bash
-    git clone [https://github.com/yourusername/repressilator-dynamics.git](https://github.com/yourusername/repressilator-dynamics.git)
-    ```
-2.  Ensure you have the required Python libraries installed:
-    ```bash
-    pip install numpy scipy matplotlib jupyter
-    ```
-3.  Open the Jupyter Notebook and run the cells sequentially:
-    ```bash
-    jupyter notebook repressilator_simulation.ipynb
-    ```
+Open the notebook in Jupyter and run the cells to reproduce the simulations.
 
 **Authors:** Kumar Onker  
 *Part of Course: IDC 401 (Theoretical Biology)*
