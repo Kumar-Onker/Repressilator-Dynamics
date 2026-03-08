@@ -43,7 +43,7 @@ J = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Here, $f'$ represents the derivative of the repression function evaluated at the steady state ($p^*$):
+Here, $f'$ represents the derivative of the repression function evaluated at the steady state ($p^*$).
 
 $$f' = \frac{-\alpha n (p^*)^{n-1}}{(1 + (p^*)^n)^2}$$
 
