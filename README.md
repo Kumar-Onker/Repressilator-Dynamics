@@ -40,7 +40,7 @@ By finding the eigenvalues of this matrix, we can analyze the stability conditio
 
 ## Simulation Results
 
-The Jupyter Notebook (`IDC401_Project.ipynb`) included in this repository numerically integrates the ODEs to visualize these dynamics. 
+The Jupyter Notebook (`repressilator_simulation.ipynb`) included in this repository numerically integrates the ODEs to visualize these dynamics. 
 
 ### 1. 2-Parameter Stability Boundary
 By mapping the boundaries where the eigenvalues cross the imaginary axis, we can visualize the parameter space ($\alpha$ vs $\beta$) where the system becomes unstable and begins to oscillate.
@@ -77,7 +77,7 @@ Treating the maximum transcription rate ($\alpha$) as our control parameter reve
     ```
 3.  Open the Jupyter Notebook and run the cells sequentially:
     ```bash
-    jupyter notebook IDC401_Project.ipynb
+    jupyter notebook repressilator_simulation.ipynb
     ```
 
 **Authors:** Bhavya (MS21112) & Kumar (MS21266)  
