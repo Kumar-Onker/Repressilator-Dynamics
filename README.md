@@ -60,26 +60,6 @@ $$
 
 By evaluating the eigenvalues of $J_k$, we can determine the stability conditions. The complex eigenvalues that arise in modes 1 and 2 cross the imaginary axis as parameters $\alpha$ or $n$ increase, indicating a **Hopf bifurcation** and the onset of sustained limit-cycle oscillations.
 
-## Linear Stability Analysis
-
-At steady state, the derivatives are zero. Assuming symmetry across the three genes, we get $m_i^* = m^*$ and $p_i^* = p^*$. The stability of this steady state is determined by the $6 \times 6$ Jacobian matrix:
-
-$$
-J = \begin{pmatrix}
--1 & 0 & 0 & 0 & 0 & f_1' \\
-0 & -1 & 0 & f_2' & 0 & 0 \\
-0 & 0 & -1 & 0 & f_3' & 0 \\
-\beta & 0 & 0 & -\beta & 0 & 0 \\
-0 & \beta & 0 & 0 & -\beta & 0 \\
-0 & 0 & \beta & 0 & 0 & -\beta
-\end{pmatrix}
-$$
-Here, $f_i'$ represents the derivative of the repression function evaluated at the steady state ($p^*$):
-
-$$f_i' = \left. \frac{d}{dp_j} \left( \frac{\alpha}{1 + p_j^n} + \alpha_0 \right) \right|_{p_j = p^*} = \frac{-\alpha n p^{*(n-1)}}{(1 + p^{*n})^2}$$
-
-By finding the eigenvalues of this matrix, we can analyze the stability conditions. The complex eigenvalues that arise in modes 1 and 2 cross the imaginary axis as parameters $\alpha$ or $n$ increase, indicating a **Hopf bifurcation** and the onset of sustained oscillations.
-
 ## Simulation Results
 
 The Jupyter Notebook (`repressilator_simulation.ipynb`) included in this repository numerically integrates the ODEs to visualize these dynamics. 
