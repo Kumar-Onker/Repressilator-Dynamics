@@ -25,7 +25,7 @@ Where:
 * $n$: Hill coefficient (cooperativity).
 
 ### Steady-State Analysis
-At steady state, the derivatives are zero ($\frac{dm_i}{dt} = \frac{dp_i}{dt} = 0$). Assuming symmetry across the three genes, we get $m_i^* = m^*$ and $p_i^* = p^*$. 
+At steady state, the derivatives are zero ($\frac{dm_i}{dt} = \frac{dp_i}{dt} = 0$). Assuming symmetry across the three genes, we get $ m_i^* = m^*$ and $ p_i^* = p^* $. 
 
 From the protein equation, this gives $p^* = m^*$. Substituting this into the mRNA equation yields the steady-state condition:
 
@@ -34,7 +34,7 @@ $$p^* = \frac{\alpha}{1 + p^{*n}} + \alpha_0$$
 ### Linear Stability & The Jacobian
 To determine the stability of this steady state, we perform linear analysis. The $6 \times 6$ Jacobian matrix can be transformed using the cube roots of unity ($\lambda_k$) into three simpler $2 \times 2$ block matrices for each mode $k \in \{0, 1, 2\}$:
 
-$$J_k = \begin{pmatrix} -1 & f'\lambda_k \\ \beta & -\beta \end{pmatrix}$$
+$$J_k = \begin{pmatrix} -1 & f'\lambda_k & \beta & -\beta \end{pmatrix}$$
 
 Here, $f'$ is the derivative of the repression function evaluated at the steady state:
 
