@@ -33,14 +33,14 @@ At steady state, the derivatives are zero ($\frac{dm_i}{dt} = \frac{dp_i}{dt} = 
 The stability of this steady state is determined by the $6 \times 6$ Jacobian matrix:
 
 $$
-J = \begin{pmatrix}
+J = \begin{bmatrix}
 -1 & 0 & 0 & 0 & 0 & f' \\
 0 & -1 & 0 & f' & 0 & 0 \\
 0 & 0 & -1 & 0 & f' & 0 \\
 \beta & 0 & 0 & -\beta & 0 & 0 \\
 0 & \beta & 0 & 0 & -\beta & 0 \\
 0 & 0 & \beta & 0 & 0 & -\beta
-\end{pmatrix}
+\end{bmatrix}
 $$
 
 
@@ -53,10 +53,10 @@ $$
 To simplify the analysis, this $6 \times 6$ matrix can be transformed using the cube roots of unity ($\lambda_k$) into three independent $2 \times 2$ block matrices ($J_k$) for each mode $k \in \{0, 1, 2\}$:
 
 $$
-J_k = \begin{pmatrix}
+J_k = \begin{bmatrix}
 -1 & f'\lambda_k \\
 \beta & -\beta
-\end{pmatrix}
+\end{bmatrix}
 $$
 
 By evaluating the eigenvalues of $J_k$, we can determine the stability conditions. The complex eigenvalues that arise in modes 1 and 2 cross the imaginary axis as parameters $\alpha$ or $n$ increase, indicating a **Hopf bifurcation** and the onset of sustained limit-cycle oscillations.
