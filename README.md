@@ -28,6 +28,40 @@ Where:
 
 ## Linear Stability Analysis
 
+At steady state, the derivatives are zero ($\frac{dm_i}{dt} = \frac{dp_i}{dt} = 0$). Assuming symmetry across the three genes, we get $m_i^* = m^*$ and $p_i^* = p^*$. 
+
+The stability of this steady state is determined by the $6 \times 6$ Jacobian matrix:
+
+$$
+J = \begin{pmatrix}
+-1 & 0 & 0 & 0 & 0 & f' \\
+0 & -1 & 0 & f' & 0 & 0 \\
+0 & 0 & -1 & 0 & f' & 0 \\
+\beta & 0 & 0 & -\beta & 0 & 0 \\
+0 & \beta & 0 & 0 & -\beta & 0 \\
+0 & 0 & \beta & 0 & 0 & -\beta
+\end{pmatrix}
+$$
+
+Here, $f'$ represents the derivative of the repression function evaluated at the steady state ($p^*$):
+
+$$
+f' = \frac{-\alpha n (p^*)^{n-1}}{(1 + (p^*)^n)^2}
+$$
+
+To simplify the analysis, this $6 \times 6$ matrix can be transformed using the cube roots of unity ($\lambda_k$) into three independent $2 \times 2$ block matrices ($J_k$) for each mode $k \in \{0, 1, 2\}$:
+
+$$
+J_k = \begin{pmatrix}
+-1 & f'\lambda_k \\
+\beta & -\beta
+\end{pmatrix}
+$$
+
+By evaluating the eigenvalues of $J_k$, we can determine the stability conditions. The complex eigenvalues that arise in modes 1 and 2 cross the imaginary axis as parameters $\alpha$ or $n$ increase, indicating a **Hopf bifurcation** and the onset of sustained limit-cycle oscillations.
+
+## Linear Stability Analysis
+
 At steady state, the derivatives are zero. Assuming symmetry across the three genes, we get $m_i^* = m^*$ and $p_i^* = p^*$. The stability of this steady state is determined by the $6 \times 6$ Jacobian matrix:
 
 $$
@@ -88,7 +122,7 @@ Treating the maximum transcription rate ($\alpha$) as our control parameter reve
     jupyter notebook repressilator_simulation.ipynb
     ```
 
-**Authors:** Bhavya (MS21112) & Kumar (MS21266)  
+**Authors:** Kumar Onker  
 *Part of Course: IDC 401 (Theoretical Biology)*
 
 ## References
