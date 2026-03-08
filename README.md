@@ -4,7 +4,7 @@
 This repository contains the numerical simulation and mathematical analysis of the **Repressilator**, a synthetic oscillatory network of transcriptional regulators. The model explores the dynamics of a genetic circuit consisting of three repressor proteins (LacI, TetR, and CI) arranged in a cyclic inhibitory feedback loop. 
 
 
-\[Circuit Diagram](figures/3-gene/png)
+![Circuit Diagram](figures/3-gene/png)
 
 ## Background
 The repressilator was originally designed and implemented in *Escherichia coli* by Elowitz and Leibler (2000). By utilizing a negative feedback loop with an odd number of components, the system avoids stable steady states under certain parameter regimes, leading to sustained oscillations in protein concentration. This project mathematically proves the conditions for these oscillations and simulates them using Python.
