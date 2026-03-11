@@ -85,7 +85,6 @@ Treating the maximum transcription rate ($\alpha$) as our control parameter reve
 
 ## Repository Structure
 * `repressilator_stability.ipynb`: The main Jupyter Notebook containing the ODE definitions, numerical integration, and visualizations.
-* `A synthetic oscillatory network of transcriptional regulators.pdf`: The original 2000 *Nature* paper used as the primary biological reference.
 * `figures/`: Directory containing the plots and circuit diagrams used in this documentation.
 
 ## How to Run
